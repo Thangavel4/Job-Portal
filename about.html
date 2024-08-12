@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+            display: flex;
+        }
+        .content{
+            margin: 100px 10px;
+        }
+        h2{
+            text-align: center;
+            padding: 20px;
+        }
+        p{
+            font-size: large;
+            text-align:center;
+        }
+        .service ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        li{
+            list-style-type: none;
+            border: 1px solid black;
+            padding: 7px  20px;
+            background-color: #90e27f;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        @media (max-width:991px) {
+            
+            body {
+                display: block;
+                margin: 0;
+                padding: 10px;
+            }
+            .ima{
+               display: flex;
+               align-items: center;
+               justify-content: center;
+            }
+            img{
+                height: 200px;
+            }
+
+        }
+        @media (max-width: 767px) 
+        {
+            img{
+                height: 200px;
+                width: 250px;
+            }
+            body {
+                display: block;
+                margin: 0;
+                padding: 10px;
+            }
+            .content {
+                margin:20px 10px;
+            }
+            
+            h2{
+                font-size: 24px;
+                padding: 10px;
+            }
+            
+            p {
+                font-size: 16px;
+                text-align: center;
+                margin: 0 10px;
+            }
+            
+            .service ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+                margin: 0;
+            }
+            li {
+                width: 100%;
+                max-width: 300px;
+                margin: 10px 0;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="ima">
+        <img src="./logo-dsn.png" alt="logo" style="margin-top: 70px;">
+    </div>
+    <div class="content">
+        <h2>Our Vision</h2>
+        <p>We are a technology company on a mission to equip students with relevant skills & practical exposure to help them get the best possible start to their careers. Imagine a world full of freedom and possibilities. A world where you can discover your passion and turn it into your career. A world where you graduate fully assured, confident, and prepared to stake a claim on your place in the world.</p>
+        <div class="service">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Fresher jobs</li>
+                <li>Internship</li>
+                <li>Courses</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
